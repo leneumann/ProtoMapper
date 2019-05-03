@@ -31,12 +31,12 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
-      - run: export VERSION=1.$CIRCLE_BUILD_NUM
+      - run: export VERSION=1.0.$CIRCLE_BUILD_NUM
       - run:
             command: |
-                echo 'export VERSION="1.$CIRCLE_BUILD_NUM"' >> $BASH_ENV
+                echo 'export VERSION="1.0.$CIRCLE_BUILD_NUM"' >> $BASH_ENV
       - run: dotnet pack --output nupkgs -p:PackageVersion=$VERSION
-      - run: curl -F package=@/root/project/${PROJECT_NAME}/nupkgs/${PROJECT_NAME}.${VERSION}.0.nupkg https://${GEM_FURY_PUSH_TOKEN}@push.fury.io/${GEM_FURY_ACCOUNT}/      
+      - run: curl -F package=@/root/project/src/${PROJECT_NAME}/nupkgs/${PROJECT_NAME}.1.0.${VERSION}.nupkg https://${GEM_FURY_PUSH_TOKEN}@push.fury.io/${GEM_FURY_ACCOUNT}/      
 
 workflows:
   version: 2
