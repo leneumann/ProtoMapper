@@ -25,18 +25,18 @@ jobs:
       - run: dotnet test "--logger:junit;LogFilePath=./test-reports/results.xml" /p:Include="[${PROJECT_NAME}*]*" /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Thereshold=${MINIMUM_COVERAGE} /p:CoverletOutput="../coverage.xml"
       - run: curl -s https://codecov.io/bash > codecov
       - run: chmod +x codecov
-      - run: ./codecov -f "coverage.xml" -t $CODECOV_TOKEN
+      - run: ./codecov -f "coverage.xml" -t ${CODECOV_TOKEN}
   deploy:
     executor: my-executor
     steps:
       - attach_workspace:
           at: ~/project
-      - run: export VERSION=1.0.$CIRCLE_BUILD_NUM
+      - run: export VERSION=1.0.${CIRCLE_BUILD_NUM}
       - run:
             command: |
-                echo 'export VERSION="1.0.$CIRCLE_BUILD_NUM"' >> $BASH_ENV
-      - run: dotnet pack -p:PackageVersion=$VERSION
-      - run: dotnet nuget push ${PROJECT_NAME}.${VERSION}.nupkg -k oy2ftnt5hezojc6us5gqfrvzti467l6ufmocjpi2ntnevy
+                echo 'export VERSION="1.0.${CIRCLE_BUILD_NUM}"' >> $BASH_ENV
+      - run: dotnet pack --output . -p:PackageVersion=$VERSION
+      - run: dotnet nuget push ${PROJECT_NAME}.${VERSION}.nupkg -k ${NUGET_KEY} -s ${NUGET_SOURCE}
 
 workflows:
   version: 2
