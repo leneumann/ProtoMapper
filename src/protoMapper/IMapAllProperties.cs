@@ -1,6 +1,6 @@
 using ProtoBuf.Meta;
 
-namespace protoMapper
+namespace ProtoMapper
 {
     public interface IMapAllProperties<T>
     {

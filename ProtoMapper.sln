@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2974B1BD-0DF6-4219-9A02-25BCE6AD996F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "protoMapper", "src\protoMapper\protoMapper.csproj", "{2BA7BCAD-5A64-492E-8D35-64B2600EA5F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoMapper", "src\ProtoMapper\ProtoMapper.csproj", "{2BA7BCAD-5A64-492E-8D35-64B2600EA5F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{C7844469-DE43-4F89-B9D4-462078D710A6}"
 EndProject

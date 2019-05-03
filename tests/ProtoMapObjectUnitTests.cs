@@ -1,5 +1,5 @@
 using System;
-using protoMapper;
+using ProtoMapper;
 using Xunit;
 
 namespace tests

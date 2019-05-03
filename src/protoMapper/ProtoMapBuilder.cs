@@ -1,7 +1,7 @@
 ﻿using System;
 using ProtoBuf.Meta;
 
-namespace protoMapper
+namespace ProtoMapper
 {
     public class ProtoMapBuilder
     {

@@ -2,7 +2,7 @@ using System;
 using System.Linq.Expressions;
 using ProtoBuf.Meta;
 
-namespace protoMapper
+namespace ProtoMapper
 {
     public interface IMapProperty<T>
     {

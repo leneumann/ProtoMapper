@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\protoMapper\protoMapper.csproj" />
+    <ProjectReference Include="..\src\ProtoMapper\ProtoMapper.csproj" />
   </ItemGroup>
 
 </Project>

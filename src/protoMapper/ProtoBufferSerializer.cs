@@ -1,7 +1,7 @@
 using System.IO;
 using ProtoBuf.Meta;
 
-namespace protoMapper
+namespace ProtoMapper
 {
     public class ProtoBufferSerializer : IProtoBufferSerializer
     {

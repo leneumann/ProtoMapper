@@ -1,5 +1,5 @@
 using ProtoBuf.Meta;
-using protoMapper;
+using ProtoMapper;
 using Xunit;
 
 namespace tests

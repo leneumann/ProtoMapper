@@ -1,4 +1,4 @@
-namespace protoMapper
+namespace ProtoMapper
 {
     public interface IProtoBufferSerializer
     {
