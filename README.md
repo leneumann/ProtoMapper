@@ -32,3 +32,9 @@ IProtoBufferSerializer Serializer = new ProtoBufferSerializer(_proto);
 
 ## See a full example in
 https://github.com/leneumann/poc-protobuffer/tree/master/src/protobufNet/runTimeTypeModel
+
+
+
+## Additional information
+This project uses a pipeline of CD using Cirle CI + Codecov + Nuget, thanks to @github/tcfialho
+https://codecov.io/gh/leneumann/ProtoMapper
