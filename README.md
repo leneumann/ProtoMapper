@@ -1,6 +1,6 @@
 # ProtoMapper
 
-Provides a fluent interface to map classes and properties that represents the contracts of the Language Specification and a serializer/deserializer.
+Provides a fluent interface when using Protobuf-net (https://github.com/mgravell/protobuf-net) to map classes and properties that represents the contracts of the Language Specification and a serializer/deserializer.
 
 
 ## Example of usage:
@@ -36,5 +36,6 @@ https://github.com/leneumann/poc-protobuffer/tree/master/src/protobufNet/runTime
 
 
 ## Additional information
-This project uses a pipeline of CI;CD using Github + Cirle CI + Codecov + Nuget, thanks to @github/tcfialho
+This project uses a pipeline of CI/CD using Github + Cirle CI + Codecov + Nuget, thanks to @github/tcfialho
+This project was created only to help others to use a fluent interface with protobuf-net (https://github.com/mgravell/protobuf-net) and was used together with the protobuf-net.
 https://codecov.io/gh/leneumann/ProtoMapper
